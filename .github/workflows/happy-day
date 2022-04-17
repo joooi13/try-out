@@ -1,0 +1,14 @@
+name: Happy Day on the 8th day of the month
+
+on:
+  schedule:
+    # 毎月8のつく日の12:00(JST)に処理を実行する。
+    # UTC の 03:00 は JST だと 12:00 。
+    - cron: '0 0 8,18,28 * *'
+
+jobs:
+  build:
+    name: build
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo "🎉 Happy Day!"
