@@ -5,6 +5,7 @@ on:
     # 毎月8のつく日の12:00(JST)に処理を実行する。
     # UTC の 03:00 は JST だと 12:00 。
     - cron: '0 0 8,18,28 * *'
+  workflow_dispatch:
 
 jobs:
   build:
