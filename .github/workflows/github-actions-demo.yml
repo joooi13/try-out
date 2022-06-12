@@ -1,5 +1,7 @@
 name: GitHub Actions Demo
 on: [push]
+env:
+  SECRET_NAME: ${{secrets.NAME}}
 jobs:
   Explore-GitHub-Actions:
     runs-on: ubuntu-latest
